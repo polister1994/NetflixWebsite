@@ -1,0 +1,1331 @@
+@font-face {
+    font-family: NetflixSans_W_Rg;
+    src: url(/fonts/NetflixSans_W_Rg.woff2);
+}body{
+    margin: 0;
+    font-family: NetflixSans_W_Rg;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    box-sizing: border-box;
+}
+i{
+    color: white;
+}
+/* Textos , tamaños de letra, parrafos, titulos etc */
+.iniciar-sesion{
+    cursor: pointer;
+}
+h1{
+    color: white;
+    font-size: 64px;
+    margin: 15px 0 15px 0;
+}
+h2{
+    font-size: 26px;
+    margin: 16px 0 16px 0;
+}
+h3{
+    font-size: 19px;
+}
+
+select option{
+    background-color: #303030;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+/* INFORMACION PRINCIPAL  */
+
+.div-padre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+}
+.registro-padre{
+    background-image: url(/img/registro/VE-es-20221107-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 8px solid #222;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0 40px 0 40px;
+}
+.header-netflix{
+    display: flex;
+    align-items: center;
+}
+.input-border{
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+}
+.logo{
+    width: 170px;
+}
+.registro-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 150px 250px 100px 250px;
+    height: 550px;
+    margin-bottom: 130px;
+}
+    .registro-select{
+        background-color:transparent;
+        border-color: transparent;
+        color: white;
+        width: 200px;
+        height: 34px;
+        font-size: 13px;
+        padding: 3px;
+        outline: none;
+        cursor: pointer;
+    }
+    .div-registro-select{
+        display: flex;
+        align-items: center;
+        width: 100px;
+        border: 1px solid white;
+        margin-right: 35px;
+        height: 36px;
+        padding: 5px;
+        background-color: #00000066
+    }
+    .boton-sesion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #E50914;
+        color: white;
+        border-color: transparent;
+        cursor: pointer;
+    }
+.descarga-offline, .perfiles-para-niños{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 50px 150px 50px 150px;
+    border-bottom: 8px solid #222;
+    height: 470px;
+}
+.email-registro{
+    width: 500px;
+    height: 70px;
+    border-right: transparent;
+    color: black;
+    text-indent: 10px;
+}
+.email-registro:focus{
+    outline: 0;
+    border-color: rgb(0, 123, 255);  
+}
+.comenzar{
+    margin-top: 0.5px;
+    width: 200px;
+    height: 70px;
+    background-color: #E50914;
+    color: white;
+    font-size: 22px;
+    border: 1px solid;
+    border-color: black;
+    cursor: pointer;
+}
+.email-comenzar{
+    display: flex;
+}
+/* DIVS DE INFORMACION  */
+
+.disfruta-tv, .descarga-offline{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+    border-bottom: 8px solid #222;
+}
+.info-tv{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0 150px 0 150px;
+    padding-right: 80px;
+    min-width: 300px;
+}
+.tv-img{
+   width: 33em;
+}
+
+.div-tv{
+    width: 50%;
+}
+.descarga-offline{
+    width: 100%;
+}
+
+    .descargando{
+        position: relative;
+        width: 250px;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        right: 0;
+    }
+    
+    .imagenes-descarga{
+        width: 50%;
+        position: relative;
+    }
+    .series-offline{
+        width: 50%;
+        padding: 50px;
+        min-width: 350px;
+    }
+    .telefono-side{
+        background-color: black;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid #222;
+        border-radius: 20px;
+        height: 120px;
+        min-width: 50%;
+        bottom: 20px;
+        right: 180px;
+        padding: 10px;
+    }
+    .texto-imagen{
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-descarga{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 0 10px;
+    }
+        .stranger-thingsimg{
+            height: 90px;
+        }
+        .loading{
+            width: 30px;
+            height: 30px;
+        }
+            .p-descargando{
+                color: rgb(0, 94, 255);
+            }
+
+/* Disfruta donde quieras */
+
+.donde-quieras{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 50px 100px 50px 100px;
+    border-bottom: 8px solid #222;
+    height: 470px;
+}
+    .texto-dispositivos{
+        margin: 0 150px 0 150px
+    }
+    .img-dispositivos{
+        width: 33em;
+        padding-right: 100px;
+    }
+
+/* niños> */
+
+.niños-img{
+    width: 500px;
+    padding-left: 100px;
+}
+.niños-texto{
+    margin: 0 150px 0 150px;
+    min-width: 30%;
+}
+
+.niños-div-img{
+    width: 55%;
+}
+
+ /* FAQ */
+
+ .faq-padre{
+    align-items: center;
+    width: 100%;
+    min-width: 50%;
+    padding: 50px 350px 0px 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-bottom: 8px solid #222;
+ }
+
+ .faq-div{
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+    align-items: center;
+    padding: 5px 0px 75px 0px;
+    margin-top: 30px;
+    height: 100%;
+ }
+    .netflix{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        padding: 15px;
+        background-color: #303030;
+        margin: 10px 0 10px 0;
+    }
+        .faq-button{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+            .boton-faq{
+                display: flex;
+                background-color: transparent;
+                border-color: transparent;
+                width: 100%;
+                padding-left: 10px;
+                align-items: center;
+                color: white;
+                font-size: 20px;
+                justify-content: space-between
+            }
+            .boton-faq:hover{
+                cursor: pointer;
+            }
+                
+            .imgplus{
+                width: 20px;
+            }
+.faq-respuesta{
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        background-color: #303030;
+        color: white;
+        font-size: 30px;
+}
+.registro-info-2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #737373;
+    
+}
+/*  ----- footer ----- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 30%;
+    color: #737373;
+    padding: 50px 0px 20px 0px;
+    align-content: space-around;
+}
+
+.footer-info{
+    display: flex;
+}
+.footer-info-a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5px 15px 0;
+
+}
+.footer-a{
+    width: 200px;
+    padding: 5px 0 5px 0;
+}
+.footer-idioma{
+    color: #737373;
+}
+.footer i{
+    color: #737373;
+}
+.p-faq{
+    font-size: 26px;
+}
+.span-faq{
+    font-size: 26px;
+}
+.p-numero{
+    width: 50%;
+}
+
+
+/* MOBILE  */
+
+@media all and (max-width: 1400px){
+    h1{
+        font-size: 46px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .info-tv{
+        margin: 0px;
+        padding: 0 50px 0 50px
+    }
+
+}
+@media all and (max-width: 1250px){
+
+    .niños-img{
+        padding: 0 100px 0 0
+    }
+
+    h1{
+        text-align: center;
+        font-size: 42px;
+    }
+    .tv-img{
+        width: 25em;
+    }
+    .img-dispositivos{
+        width: 28em;
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 850px){
+
+    .info-tv{
+        padding: 0 50px 0 0;
+    }
+    .tv-img{
+        padding-right: 0px;
+        width: 22em
+    }
+    .registro-info{
+        padding: 200px 150px 100px 150px;
+    }
+
+    .img-dispositivos{
+        padding: 60px;
+    }
+    .texto-dispositivos{
+        margin: 0px
+    }
+    .niños-texto{
+        margin: 0px;
+    }
+    .perfiles-para-niños{
+        padding: 50px 50px 50px 50px;
+    }
+    .telefono-side{
+        right: 50px;
+    }
+    .footer{
+        padding: 50px 30px 50px 30px;
+        align-content: center;
+    }
+    .footer-a{
+        width: 100%;
+    }
+    .faq-padre{
+        padding: 50px 50px 0 50px;
+    }
+}
+
+@media all and (max-width: 426px){
+
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    .logo{
+        width: 95px;
+    }
+    .header{
+        flex-direction: row;
+        margin: 0 0 0 20px;
+        align-items: center;
+    }
+    .div-registro-select{
+        width: 95px;
+        height: 31px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    .boton-sesion{
+        width: 100px;
+        height: 34px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .header-netflix{
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+    .registro-info{
+        height: 460px;
+        padding: 75px 20px 50px 20px;
+        margin-bottom: 0px;
+    }
+    .email-comenzar{
+        flex-direction: column;
+    }
+    .email-registro{
+        width: 300px;
+        height: 50px;
+    }
+    .comenzar{
+        width: 150px;
+        height: 50px;
+        margin-left: 75px;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    .disfruta-tv{
+        flex-direction: column;
+        padding: 50px 30px 50px 30px;
+    }
+    .info-tv{
+        padding-right: 0
+    }
+    .tv-img{
+        width: 15em;
+    }
+    .div-tv{
+        margin: 0 100px 0 0;
+        padding: 0;
+    }
+    .descarga-offline{
+        flex-direction: column;
+        height: 100%;
+        padding: 50px;
+    }
+    .img-dispositivos{
+        width: 20em;
+        padding: 0px;
+    }
+    .descargando{
+     left: -60px;
+    }
+    .telefono-side{
+        right: -45px;
+    }
+    .stranger-thingsimg{
+        padding-top: 10px;
+    }
+    .donde-quieras{
+        flex-direction: column;
+        height: 100%;
+    }
+    .perfiles-para-niños{
+        flex-direction: column;
+        height: 100%;
+        padding: 50px;
+    }
+    .niños-img{
+        width: 18em;
+        padding: 0;
+        margin-right: 0;
+    }
+    .niños-div-img{
+        width: 100%;
+        margin: 0;
+        padding-right: 0px
+    }
+    .p-faq{
+        font-size: 20px;
+    }
+    .span-faq{
+        font-size: 20px;
+    }
+    .imgplus{
+        width: 1em;
+    }
+    .p-numero{
+        width: 100%;
+    }
+    .footer{
+        margin: 0 10px 0 10px;
+    }
+    .footer-info{
+        flex-direction: column;
+    
+    }
+    .footer-info-a{
+        padding-bottom: 2px;
+    }
+}
+
+@media all and (max-width: 325px){
+    .header-netflix{
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+    .boton-sesion{
+        margin-right: 0px;
+        width: 75px;
+        font-size: 12px;
+    }
+    .registro-select{
+        font-size: 12px;
+    }
+    .div-registro-select{
+        width: 90px;
+    }
+    .descarga-offline{
+        width: 100%;
+        height: 35em;
+        padding: 20px;
+        justify-content: none;
+
+    }
+    .descargando{
+        right: 0
+    }
+    .series-offline{
+        width: 100%;
+        min-width: 0px;
+        padding: 0px;
+    }
+    .donde-quieras{
+        padding: 20px;
+    }
+    .img-dispositivos{
+        width: 17em;
+    }
+    .niños-img{
+        width: 16em;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .footer-info{
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+        font-size: 12px;
+    }
+    .faq-padre{
+        padding:15px
+    }
+}
+@media all and (min-width: 2560px){
+    .telefono-side{
+        min-width: 30%;
+        right: 400px;
+    }
+}
+
+/* ------------------------------------------- Seleccion de perfil ------------------------------------ */
+
+.selecciona-perfil{
+    font-family: NetflixSans_W_Rg ;
+    background-color: #141414;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-perfiles{
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 100px
+}
+.perfiles-body{
+background-color: #141414;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenes-perfil{
+    width: 10em;
+    margin: 15px;
+    border-radius: 10px;
+}
+.administrar-perfiles-button{
+    font-family: NetflixSans_W_Rg ;
+    margin-top: 50px;
+    background-color: transparent;
+    width: 250px;
+    height: 50px;
+    color: gray;
+    border-color: gray;
+    border-style: double;
+    font-size: 20px;
+}
+.perfil:hover .imagenes-perfil{
+    border: 2px white solid;
+}
+.perfil:hover .h3-perfil{
+    color: white;
+}
+
+.administrar-perfiles-button:hover{
+    border: 2px white solid;
+    color: white;
+    cursor: pointer;
+}
+
+@media all and (max-width: 770px){
+    .selecciona-perfil{
+        height: 100%;
+    }
+}
+@media all and (max-width: 430px){
+    .div-perfiles{
+        padding: 0;
+    }
+    .imagenes-perfil{
+        width: 7em;
+    }
+    .administrar-perfiles-button{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+        width: 180px;
+        height: 40px;
+    }
+    .h3-perfil{
+        font-size: 16px;
+    }
+}
+
+/* -------------------------------------------- Registro -------------------------------------------- */
+.div-padre-registro{
+    height: 100vh;
+}
+.registro{
+    font-family: NetflixSans_W_Rg;
+    background-color: #fff;
+    height: 100vh;
+}
+.registro-creacion{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    padding: 35px 100px 200px 100px;
+}
+.informacion-para-registro{
+    display: flex;
+    flex-direction: column;
+}
+.header-registro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+    border-bottom: 1px solid #e6e6e6
+}
+.boton-sesion-registro{
+    color: black;
+    font-size: 19px;
+    background-color: transparent;
+    border: transparent;
+    font-family: NetflixSans_W_Rg;
+}
+.boton-sesion-registro:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+    .registro-paso{
+        font-size: 13px;
+    }
+    .registro-saludo{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .registro-contraseña{
+        font-size: 18px;
+    }
+    .correo-usuario{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 0;
+    }
+    .registro-email{
+        padding-bottom: 3px;
+    }
+    .input-contraseña{
+        height:60px;
+        text-indent: 10px;
+        font-size: 16px;
+    }
+    .olvidaste-pass{
+        padding: 15px 0 15px 0;
+        color: #0071EB
+    }
+    .continuar-registro{
+        width: 450px;
+        background-color: #e50914;
+        border: transparent;
+        border-radius: 4px;
+        height: 65px;
+        font-size: 24px;
+        color: white;
+    }
+    .continuar-registro:hover{
+        cursor: pointer;
+        background-color: #f6121d;
+        
+    }
+.footer-registro{
+    border-top: 1px solid #e6e6e6;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    color: #737373;
+    padding: 20px 35% 20px 80px;
+    margin-top: auto;
+}
+.footer-a-registro{
+    padding: 10px 1px 10px 0;
+    font-size: 13px;
+}
+.footer-idioma-registro{
+    background-color: white;
+    color:#737373;
+    font-size: 16px;
+}
+.div-registro-select-2{
+    display: flex;
+    background-color: white;
+    color: #737373;
+    width: 130px;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+    border:1px #737373 solid;
+}
+.registro-icon{
+    color: #404040;
+}
+.footer-info-registro{
+    display: flex;
+    max-width: 1000px;
+}
+
+@media all and (max-width: 430px){
+    .header-registro{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 50px;
+    }
+    .boton-sesion-registro{
+        font-size: 16px;
+    }
+    .registro-creacion{
+        width: 100%;
+        padding: 0;
+        
+
+    }
+    .informacion-para-registro{
+        width: 100%;
+        padding:35px 35px 200px 35px
+    }
+    .continuar-registro{
+        width: 100%;
+    }
+    .footer-registro{
+        padding: 0 0 20px 20px;
+    }
+    .boton-sesion-registro{
+        font-size: 14px;
+    }
+    .footer-info-registro{
+        flex-direction: column;
+    }
+
+}
+
+/* --------------------------------------------- DIRECTORIO --------------------------------------------- */
+.user-profile-div:hover{
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+img{
+    cursor: pointer;
+}
+
+.h2-directorio{
+    color: white;
+    padding-left: 5px;
+}
+
+.logo-catalogo{
+    width: 100px;
+}
+.directorio-body{
+    background-color: #141414;
+    display: flex;
+}
+
+.header-catalogo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+    background: #141414;
+}
+.menu-perfil{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    right: 33%;
+    width: 230px;
+    padding: 8px;
+}
+.user-profile-div:hover .menu-perfil{
+    display: flex;  
+}       
+        .drop-down-options{
+            border-left: 1px #737373 solid;
+            border-right: 1px #737373 solid;
+            font-size: 12px;
+            color: white;
+            padding: 8px;
+            display: flex;
+            flex-direction: row;
+            background-color: #303030e6;
+            align-items: center;
+        }
+        .drop-down-options:hover{
+            text-decoration: underline 1px;
+        }
+        .arrow-menu-div{
+            display: flex;
+            justify-content: end;
+            background-color: transparent;
+            border-bottom: 1px #737373 solid;
+        }
+        .arrow-menu{
+            display: flex;
+            width: 15px;
+        }
+        .drop-down-img{
+            width: 30px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        .ico{
+            width: 30px;
+            padding: 0 5px
+        }
+        .drop-cerrar-sesion{
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            border: 1px solid #737373;
+            background-color: #303030e6;
+            padding: 15px;
+        }
+        .drop-cerrar-sesion:hover{
+            text-decoration: underline 1px;
+        }
+        .drop-cerrar-sesion a{
+            color: white;
+        }
+.icon-r{
+    font-size: 22px;
+    padding: 15px
+}
+.search-div i:hover{
+    background-color: black;
+    border: 1px #E5E5E5 solid
+}
+.search-div i:hover input{
+    color: white;
+    width: 250px;
+    height: 30px;
+    background-color: black;
+}
+.buscar-catalogo::placeholder{
+    font-size: 16px;
+}
+.buscar-catalogo{
+    text-indent: 5px;
+    transition: 0.4s;
+    background-color: transparent;
+    width: 0px;
+    border: none;
+    outline: none;
+    display: inline;
+    align-content: center;
+}
+.fa-magnifying-glass{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+
+}
+.buscar-catalogo input{
+    width: 0%;
+    height: 0%; 
+}
+.search-div{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+.user-profile-div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.user-profile-div i{
+    transition: 0.2s
+}
+.user-profile-div:hover i{ 
+    transform: rotate(180deg);
+}
+.user-prof-image{
+    width: 2em;
+    margin: 10px;
+    border-radius: 2px;
+}
+.main-relevantes{
+    display: flex;
+    flex-direction: column;
+}
+.destacado{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+}
+
+.info-top-div{
+    background-color: #222;
+    max-width: 100%;
+    padding: 5px;
+    max-height: 100%;
+}
+.top-icons{
+    width: 100%;
+    display: flex;
+    padding: 5px 10px;
+}
+
+    .t-1-icons {
+        display: flex;
+        width: 100%;
+    }
+    .t-2-icons{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+    .div-a-catalogo{
+        align-items: center;
+        display:flex;    
+        margin-left: 40px;
+
+    }
+    .a-header-catalogo{
+        padding-right: 20px;
+        color: white;
+        font-size: 14px;
+    }
+    .l-side-header-catalogo{
+        display: flex;
+        align-items: center;
+    }
+    .l-side-header-catalogo a{
+        color: #E5E5E5;
+    }
+    .l-side-header-catalogo a:hover{
+        opacity: 80%;
+    }
+    .r-side-header-catalogo{
+        display: flex;
+        align-items: center;
+    }
+.border1{
+    border: 3px #737373 solid;
+    border-radius: 50px;
+    padding-left: 3px;
+    padding-top: 1px;
+    width: 45px;
+    height: 45px;
+}
+.border2{
+    border: 2px #737373 solid;
+    border-radius: 50px;
+    padding-left: 7px;
+    width: 45px;
+    height: 45px;
+}
+.icons-image{
+    border: white;
+    max-width: 35px;
+    max-height: 35px;
+    margin: 5px;
+}
+.directorio{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 55px 20px 55px;
+}
+.directorio img{
+    border-radius: 5px;
+}
+    .detalles-info-producto{
+        background-color: #222;
+        color: white;
+        padding: 10px 10px;
+        font-size: 18px;
+        width: 100%;
+    }
+    .categorias{
+        background-color: #222;
+        padding-left: 15px;
+        color: white;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+        .span-prod{
+            padding: 0 5px;
+        }
+        .span-porcentaje{
+            color: rgb(0, 185, 62);
+        }
+        .span-censura{
+            border: 1px white solid
+        }
+        .span-quality{
+            border: 1px white solid;
+        }
+        .relevantes-img{
+            max-height: 100%;
+        }
+.main-catalogo{
+    height: 10%;
+}
+    .top-relevantes{
+        display: flex;
+    }
+    .top-relevantes img{
+        width: 100%;
+    }
+    .top-1{
+        width: 100%;
+    }
+.bottom-relevantes{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.relevantes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+}
+.relevantes img{
+    width: 100%;
+}
+
+.catalogo{
+    padding-bottom: 40px;
+}
+    .catalogo img{
+        width: 16%;
+        margin: 3px;
+    }
+        /* --- show hide info catalogo --- */
+
+#id1, #id2, #id3{
+    display: none;
+    flex-direction: column;
+}
+.info-top-div{
+    display: flex;
+}
+.destacado:hover #id1{
+    display: flex;
+}
+.relevantes:hover #id1{
+    display: flex;
+}
+.destacado:hover .show-img{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.relevantes:hover .relevantes-img{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/* ----- media catalogo ----- */
+
+@media all and (max-width: 1441px){
+    .catalogo img{
+        width: 16em;
+    }
+}
+
+@media all and (max-width: 1025px){
+    .a-header-catalogo{
+        font-size: 13px;
+        padding-right: 8px;
+    }
+    span{
+        font-size: 12px;
+        text-align:justify
+    }
+    .bottom-relevantes{
+        padding-bottom: 15px;
+    }
+    .t-1-icons{
+        width: 40px;
+        height: 30px;
+    }
+    .t-2-icons{
+        width: 30px;
+        height: 30px;
+    }
+    .top-icons{
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    .catalogo img{
+        width: 11.1em;
+        margin: 1px;
+    }
+    .catalogo{
+        padding-bottom: 15px;
+    }
+    .l-side-header-catalogo{
+        width: 200px;
+    }
+}
+@media all and (max-width: 780px){
+    .catalogo img{
+        margin: 0.2px;
+    }
+    .a-header-catalogo{
+        font-size: 10px;
+
+    }
+    .l-side-header-catalogo{
+        width: 100%;
+    }
+    .search-div{
+        display: none;
+    }
+}
+@media all and (max-width: 430px){
+    .main-relevantes img{
+        border-radius: 5px;
+    }
+    .top-relevantes{
+        flex-direction: column;
+        padding-right: 10px;
+    }
+    .bottom-relevantes{
+        border-top: 3px solid #222;;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+    }
+    .logo-catalogo{
+        width: 75px;
+    }
+    .header-catalogo{
+        padding: 20px 10px;
+    }
+    .a-header-catalogo{
+        font-size: 8px;
+    }
+    .div-a-catalogo{
+        margin-left: 5px;
+    }
+    .user-prof-image{
+        width: 25px;
+    }
+    .catalogo img{
+        width: 12.3em;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .icon-r{
+        display: none;
+    }
+    .catalogo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .directorio{
+        padding: 10px;
+        margin-top: 20%;
+    }
+    .destacado:hover #id1{
+        display: none;
+    }
+    .relevantes:hover #id1{
+        display: none;
+    }
+    .footer-a{
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 430px){
+    .catalogo img{
+        width: 22em;
+    }
+}
