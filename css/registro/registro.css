@@ -1,7 +1,8 @@
 @font-face {
     font-family: NetflixSans_W_Rg;
     src: url(/fonts/NetflixSans_W_Rg.woff2);
-}body{
+}
+body{
     margin: 0;
     font-family: NetflixSans_W_Rg;
     min-height: 100vh;
@@ -907,6 +908,7 @@ img{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 100;
     display: flex;
     padding: 20px 60px;
     justify-content: space-between;
@@ -1166,7 +1168,7 @@ img{
 .bottom-relevantes{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    margin-bottom: 10px;
 }
 .relevantes{
     display: flex;
@@ -1177,13 +1179,18 @@ img{
 .relevantes img{
     width: 100%;
 }
-
+.h2-directorio{
+    padding-left: 50px
+}
+.sub-directorio{
+    position: relative;
+    z-index: 50
+}
 .catalogo{
-    padding-bottom: 40px;
+    margin-bottom: 50px;
 }
     .catalogo img{
-        width: 16%;
-        margin: 3px;
+        width: 100%;
     }
         /* --- show hide info catalogo --- */
 
@@ -1211,12 +1218,6 @@ img{
 
 /* ----- media catalogo ----- */
 
-@media all and (max-width: 1441px){
-    .catalogo img{
-        width: 16em;
-    }
-}
-
 @media all and (max-width: 1025px){
     .a-header-catalogo{
         font-size: 13px;
@@ -1243,7 +1244,6 @@ img{
         margin: 0;
     }
     .catalogo img{
-        width: 11.1em;
         margin: 1px;
     }
     .catalogo{
@@ -1298,7 +1298,6 @@ img{
         width: 25px;
     }
     .catalogo img{
-        width: 12.3em;
         padding: 5px;
         border-radius: 10px;
     }
@@ -1324,8 +1323,8 @@ img{
         font-size: 12px;
     }
 }
-@media all and (max-width: 430px){
-    .catalogo img{
-        width: 22em;
-    }
+@media all and (max-width: 380px){
+    .icon-r{
+        padding: 1px
+    }   
 }
